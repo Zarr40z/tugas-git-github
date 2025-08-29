@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Git Fetch dan Pull Request</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header>
+  </header>
+
+  <!--git fetch-->
+
+  <main>
+    <section class="card">
+
+      <h2>apa itu <code>git fetch</code>?</h2>
+      
+      <p><code>git fetch </code>adalah perintah untuk mengambil update terbaru dari repo tanpa langsung menggabungkan ke branch lokal.
+                                Data yang bisa yang bisa diambil seperti :
+      <p>- commit baru</p>
+      <p>- branch baru</p>
+      
+      </p>
+
+      <p><strong>Perintah jika hanya memiliki 1 remote:</strong></p>
+      <pre><code>git fetch</code></pre>
+      
+      <p><strong>Perintah jika hanya ingin mengambil update dari remote yang bernama origin:</strong></p>
+      <pre><code>git fetch </code>origin</pre>
+
+      <!--origin adalah nama defaultnya tapi bisa dirubah-->
+
+    </section>
+
+<!--Pull Request-->
+
+    <section class="card">
+
+      <h2>Apa itu Pull Request?</h2>
+
+      <p>Pull Request adalah fitur dari GitHub untuk mengusulkan perubahan kode dari suatu branch(fork) supaya bisa
+         digabung ke branch utama. Pull Request biasanya digunakn dalam kolaborasi supaya kode bisa dicek dulu sebelum
+         masuk ke repository utama</p>
+
+
+      <p><strong>alur penggunaan Pull Request:</strong></p>
+      
+      Misalnya kita sudah nge add, commit dan push suatu perubahan, lalu masuk ke repo di github terus bakal ada "compare &  pull request.
+      Terus klik "compare & pull request" pilih branch asal(yang di edit) ke branch tujuan, lalu berikan deskripsi dan klik Pull Request.
+      Sesudah itu bisa direview dan diskusi dengan kelompok dan jika sudah setuju baru merge di branch tujuan.
+
+      <br>
+
+      <p>opsional : jika branch yang sudah di merge sudah tidak diperlukan bisa dihapus</p>
+
+    </section>
+    
+ <!--awal kesimpulan-->
+
+    <section class="card">
+  <h2>jadi kesimpulannya adalah</h2>
+
+ <!--kesimpulan git fetch-->
+
+        <p><strong>Git Fetch</strong></p>
+
+<strong>Git fetch</strong> digunakan untuk mengambil perubahan terbaru dari remote repository tetapi tidak langsunng mengubah branch lokalnya,
+yang membuat lebih aman karena bisa kita cek terlebih dahulu sebelum di merge.
+<p></p>
+<br>
+ <!--kesimpulan pull request-->
+
+        <p><strong>Pull Request (PR)</strong></p>
+
+Pull Request digunakan untuk mengajukan suatu perubahan kode dari satu branch ke branch lainnya, dan dengan Pull Request kita bisa melakukan review, diskusi dan testing sebelum menggabungkan kode kode tersebut 
+
+    </section>
+
+  </main>
+
+  <footer>
+    <br>penjelasan Git Fetch dan Pull Request</br>
+                Zaki Alghani Rachman
+  </footer>
+
+</body>
+</html>
